@@ -9,13 +9,8 @@ export class PerfilComponent implements OnInit {
 
   titulo = 'Perfil'
 
-  public Perfils = [
-    { nome: 'Festa Junina'},
-    { nome: 'Festa Junin'},
-    { nome: 'Festa Juni'},
-    { nome: 'Festa Jun'}
-  ]
-
+  public Perfils = 'Perfil';
+  
   constructor() { }
 
   ngOnInit() {

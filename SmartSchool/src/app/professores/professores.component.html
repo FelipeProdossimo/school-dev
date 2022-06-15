@@ -1,63 +1,60 @@
-<div *ngIf="profSelecionado">
 
-  <div class="row">
-    <div class="col-sm-9">
-      <app-titulo [titulo]="'Professor(a): ' + profSelecionado"></app-titulo>
+<div class="row">
+  <div class="col-sm-6" *ngIf="profSelecionado">
+    <div class="row">
+      <div class="col-sm-9">
+        <app-titulo [titulo]="'Cód. Professor(a): ' + profSelecionado.id"></app-titulo>
+      </div>
+      <div class="col-sm-3 mt-2">
+        <button class="btn btn-danger bg-hover text-light" (click)="voltar()">Fechar</button>
+      </div>
     </div>
-    <div class="col-sm-3 mt-2">
-      <button class="btn btn-warning" (click)="voltar()">Lista De Professores</button>
-    </div>
+    <form>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Nome:</label>
+        <input
+          type="text"
+          class="form-control"
+          value="{{ profSelecionado.nome }}"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Disciplina:</label>
+        <input
+          type="text"
+          class="form-control"
+          value="{{ profSelecionado.disciplina }}"
+        />
+      </div>
+      <div class="form-group text-center">
+        <hr>
+        <button class="btn btn-info bg-hover">Enviar</button>
+      </div>
+    </form>
   </div>
-  <form>
-    <div class="mb-3">
-      <label for="formGroupExampleInput" class="form-label"
-        >Nome:</label
-      >
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Example input placeholder"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="formGroupExampleInput2" class="form-label"
-        >Sobrenome:</label
-      >
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Another input placeholder"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="formGroupExampleInput2" class="form-label"
-        >Telefone:</label
-      >
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Another input placeholder"
-      />
-    </div>
-  </form>
-</div>
 
-<div *ngIf="!profSelecionado">
-  <app-titulo [titulo]="titulo"></app-titulo>
-  <table class="table table-dark table-hover">
-    <thead class="thead-light">
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Nome</th>
-        <th scope="col">Disciplina</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let prof of professores" style="cursor: pointer;" (click)="profSelected(prof)">
-        <th scope="row">{{ prof.id }}</th>
-        <td>{{ prof.nome }}</td>
-        <td>{{ prof.disciplina }}</td>
-      </tr>
-    </tbody>
-  </table>
+  <div [ngClass]="{'col-sm-6': profSelecionado, 'col-sm-12': !profSelecionado}">
+    <app-titulo [titulo]="titulo"></app-titulo>
+    <table class="table table-dark table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Disciplina</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let prof of professores"
+          style="cursor: pointer"
+          (click)="profSelected(prof)"
+        >
+          <th scope="row">{{ prof.id }}</th>
+          <td>{{ prof.nome }}</td>
+          <td>{{ prof.disciplina }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </div>

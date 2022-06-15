@@ -6,16 +6,16 @@
         <app-titulo [titulo]="'Cód. Professor(a): ' + profSelecionado.id"></app-titulo>
       </div>
       <div class="col-sm-3 mt-2">
-        <button class="btn btn-danger bg-hover text-light" (click)="voltar()">Fechar</button>
+        <button class="btn btn-outline-danger bg-hover" (click)="voltar()">Fechar</button>
       </div>
     </div>
-    <form>
+    <form [formGroup]="profForm" (submit)="profSubmit()">
       <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Nome:</label>
         <input
           type="text"
           class="form-control"
-          value="{{ profSelecionado.nome }}"
+          formControlName="nome"
         />
       </div>
       <div class="mb-3">
@@ -23,12 +23,12 @@
         <input
           type="text"
           class="form-control"
-          value="{{ profSelecionado.disciplina }}"
+          formControlName="disciplina"
         />
       </div>
       <div class="form-group text-center">
         <hr>
-        <button class="btn btn-info bg-hover">Enviar</button>
+        <button class="btn btn-info bg-hover" [disabled]="!profForm.valid">Enviar</button>
       </div>
     </form>
   </div>

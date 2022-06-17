@@ -9,9 +9,7 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
   styleUrls: ['./alunos.component.css'],
 })
 export class AlunosComponent implements OnInit {
-
   public modalRef: BsModalRef;
-
   public alunoForm: FormGroup;
   public titulo = 'Alunos';
   public alunoSelecionado: Aluno;

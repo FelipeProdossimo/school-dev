@@ -16,3 +16,15 @@ _Link do Segundo estudo_
 ***Marcações necessárias do Curso***
 
 > https://prodossimo-dev.notion.site/MISTURANDO-TUD-O-fb099a723fd7439fae4e1749bada0391
+
+## Técnologias Utilizadas:
+
+- HTML
+
+- CSS
+
+- JAVASCRIPT
+
+- ANGULAR
+
+- C# .NET Core - WebAPI

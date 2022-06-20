@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SmartSchool",
+    "\\SmartSchool-WebAPI",
+    "\\SmartSchool-WebAPI\\bin",
+    "\\SmartSchool-WebAPI\\Controllers",
+    "\\SmartSchool-WebAPI\\Data",
+    "\\SmartSchool-WebAPI\\models",
+    "\\SmartSchool-WebAPI\\obj",
+    "\\SmartSchool-WebAPI\\Properties"
+  ],
+  "SelectedNode": "\\SmartSchool-WebAPI\\SmartSchool-WebAPI.csproj",
+  "PreviewInSolutionExplorer": false
+}

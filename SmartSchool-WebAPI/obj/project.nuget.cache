@@ -1,15 +1,56 @@
 {
   "version": 2,
-  "dgSpecHash": "b/nXRImkVhL4Y0nMDwrDqYkz/ZXjxLQ1l4dLGx4boAGTzZK/cK4XC0njN/2//AYrnc++rWqaKbpXaeEfg0BuzA==",
-  "success": true,
+  "dgSpecHash": "w5JnwGefrIy39hBEaehdRjQ9QU5bg0V7IuNFVCONEez0zozp/X2hrYDme0JaEyHskff5d/+Q5yTrEksr0C286w==",
+  "success": false,
   "projectFilePath": "C:\\Users\\felipe.prodossimo\\Downloads\\school-dev\\SmartSchool-WebAPI\\SmartSchool-WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
+    "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.6\\microsoft.entityframeworkcore.design.6.0.6.nupkg.sha512",
+    "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\6.0.6\\microsoft.entityframeworkcore.sqlite.6.0.6.nupkg.sha512",
+    "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.6\\microsoft.entityframeworkcore.tools.6.0.6.nupkg.sha512",
     "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
-    "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
-    "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+    "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.1\\swashbuckle.aspnetcore.6.3.1.nupkg.sha512",
+    "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
+    "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
+    "C:\\Users\\felipe.prodossimo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.1\\swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "O pacote Microsoft.EntityFrameworkCore 6.0.6 não é compatível com net5.0 (.NETCoreApp,Version=v5.0). O pacote Microsoft.EntityFrameworkCore 6.0.6 dá suporte a: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "O pacote Microsoft.EntityFrameworkCore.Tools 6.0.6 não é compatível com net5.0 (.NETCoreApp,Version=v5.0). O pacote Microsoft.EntityFrameworkCore.Tools 6.0.6 dá suporte a: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Tools",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "O pacote Microsoft.EntityFrameworkCore.Design 6.0.6 não é compatível com net5.0 (.NETCoreApp,Version=v5.0). O pacote Microsoft.EntityFrameworkCore.Design 6.0.6 dá suporte a: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Design",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "O pacote Microsoft.EntityFrameworkCore.Sqlite 6.0.6 não é compatível com net5.0 (.NETCoreApp,Version=v5.0). O pacote Microsoft.EntityFrameworkCore.Sqlite 6.0.6 dá suporte a: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

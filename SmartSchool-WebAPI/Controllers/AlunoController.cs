@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Mvc;
 
 namespace SmartSchool_WebAPI.Controllers{
@@ -7,7 +8,13 @@ namespace SmartSchool_WebAPI.Controllers{
 
         [HttpGet]
         public IActionResult Get(){
-            return BadRequest("Felipe");
+            try{
+                return Ok("");
+            }
+            catch (Exception ex){
+                return BadRequest($"Erro: {ex.Message}");
+            }
+            
         }
     }
 }
